@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jennifer Solis' Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900%7CPlayfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+     
+     .navbar {
+          opacity: 0.9;
+      }
+      
+      .nav.navbar-nav.navbar-right li a:hover {
+          color: orange;
+      }
+      
+      .navbar-default .navbar-brand:hover, 
+      .navbar-default .navbar-brand:focus 
+      {
+          background-color: transparent;
+          color:orange;      
+      }
+      
+      .navbar-default .navbar-header button:hover,
+      .navbar-default .navbar-header button:focus 
+      {
+          background-color: orange;   
+      }  
+      
+      
+  #jennifersolis {
+          margin: 0;
+          padding: 0;
+          } 
+      
+  .background-image {
+    width: 100%;
+    display: block;
+    height:auto;
+      }
+      
+  hr {
+      border-color: #CCCCCC;
+      background-color: #CCCCCC;
+      color:#CCCCCC;
+      }
+      
+  #aboutme {
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-bottom: 50px;
+      padding-right: 50px;    
+      display: block;
+      width:100%;
+      height:auto;
+      
+      }
+  #works {
+      display: block;
+      padding-bottom: 50px; 
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: #f3f3f1;
+      }
+  #contact {
+      display:block;
+      padding-top: 50px;
+      padding-bottom: 50px;
+     
+      }
+      
+      h1 {
+          display: block;
+          color: #262626;
+          text-align: center;
+          font-size: 48px;
+          font-weight: 900;
+          font-family: "Lato", sans-serif;
+      }
+          
+      
+      .section-subtitle {
+          color: #BFBFBF;
+          text-align: center;
+          font-family: "Playfair Display", sans-serif;
+          font-size: 16px;
+          position: relative;
+          letter-spacing: 1px;
+          text-transform: lowercase;
+          display: block;
+          font-weight: 100;  
+      }  
+      
+        .section-subtitle:after {
+           background-color: #7ea937;
+           bottom: -18px;
+           left: 49%;
+           content: "";
+           height: 3px;
+           width: 25px;
+           position: absolute;
+           box-sizing: border-box;
+       }
+      
+        p, ul  {
+    color: #666666;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18px;
+   padding-left: 50px;
+    padding-right: 50px;
+      }
+      
+      .col-sm-4 {
+          margin-top: 50px;
+      }
+      
+      .text {
+          background-color: #7ea937;
+          color: orange;
+          font-size: 16px;
+          padding: 12px 24px;
+          text-align: center;
+          font-family: "Lato", sans-serif;
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)}
+      
+      .img-responsive {
+        opacity: 1;
+        display: block;
+        width: 300px;
+        height: 200px;
+        transition: .5s ease;
+        backface-visibility:hidden;
+        box-shadow: 10px 10px 5px #a6a6a6; 
+        cursor: pointer;
+      }
+      
+      .margin {
+          margin:auto;
+      }
+    
+      .col-sm-4:hover .img-responsive {
+  opacity: 0.3;
+}
+
+      .col-sm-4:hover .middle {
+  opacity: 1;
+}
+      
+      
+      #tbd {
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+            
+            }
+      
+      p {
+    text-align: center;  
+        }
+      
+      
+      
+       .fa {
+           text-align: center;
+           font-size: 56px;
+           box-sizing:border-box;
+           display: block;
+           color: #7ea937;
+           margin-bottom: 50px;
+           
+           
+            }
+      
+      }
+      .center-block {
+         
+          display:block;
+          vertical-align: middle;
+          margin-top: 50px;
+          margin-right: auto;
+          margin-bottom: 5px;
+          margin-left: auto;
+          height:100%;
+          cursor: pointer;
+          }
+      
+      
+      
+      .fa-envelope:hover {
+        color: orange;
+          
+       }
+      .fa-twitter:hover {
+          color: #00ACEE;
+      }
+      .fa-linkedin:hover {
+          color: #007bb6;
+      }
+      .fa-github:hover {
+          color:black;
+      }     
+      .fa-facebook:hover {
+          color:#3B5998;
+      }
+      
+      a {
+          text-decoration: none !important;
+      }
+      
+      
+      .footer {
+          background-color: #2f2f2f;
+          color: white;
+          text-align: center;
+          font-family:"Lato", sans-serif;          
+          font-size: 12px;
+          padding-bottom: 50px;
+          padding-top: 50px;
+          width:100%;
+          position: relative;
+            }
+      
+     
+    
+      
+  </style>
+</head>
+<body>
+    <!--MainNav-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="#jennifersolis">Jennifer Solis - Web Developer</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</nav> 
+    <!--End of Main Nav-->
+    
+<div id="jennifersolis" class="container-fluid">
+    <img class="background-image" src="https://gothamculture.com/wp-content/uploads/2015/07/remote-work-challenges-990x396.jpg">
+    
+    </div>
+   <!--Beginning of About Me-->
+    
+<div id="aboutme"
+     class="container-fluid">
+     <em><h4 class="section-subtitle">Let's sit and have coffee</h4></em>
+    <h1>About Me</h1>
+    <i class="fa fa-user">
+                </i>  
+    <hr>
+         
+    
+  <p style="margin-top: 50px">Welcome!</p>
+  <p>My name is Jennifer Solis and I'm here to be you're long awaited friend in the field of web development. You're "go to gal", if you will. Take a gander at the below works I have completed. <span class="text-danger">Warning:</span> tears have been known to happen while viewing such amazement.  Once you dab your eyes dry and proactively reach out to me, I will be exteremely estactic to hear from you and more than happy to begin our creations together.</p>
+  <ul style="line-height: 2">Things I genuinely dig <small>(just to give you a little taste of what kind of gal I am)</small> :
+    <li>Sitting in the sun</li>
+    <li>Coffee obsessor</li>
+    <li>Healthy lifestyle with a happy balance of all the good and the yummy bad</li>
+    <li>Art dabbler</li>
+    <li>Soccer, workouts, yoga and standing at my computer whilst working</li>
+    <li>Spending time with my beautifully sarcastic and wittingly funny family</li>
+    </ul>
+   
+  </div>    
+<!--END ABOUT ME-->
+    
+   <!--Beginning of WORKS-->
+    
+<div id="works" 
+     class="container-fluid">
+    <em><h4 class="section-subtitle">making stuff happen</h4></em>
+    <h1>Works</h1>
+    <i class="fa fa-desktop">
+    </i>
+    <hr>
+    
+    <div class="row">
+        
+        <div class="col-sm-4">
+      
+            <a href="http://codepen.io/jensol13/full/mmRgjj" target="_blank"><img src="http://img.huffingtonpost.com/asset/scalefit_820_noupscale/58a9f7f22800002300999de4.jpg" alt="Tribute Page" class="img-responsive margin"></a>   
+        <div class="middle">
+        <div class="text">Tribute Page</div><!--div text-->
+        </div><!--div middle-->
+   </div> <!--div col-sm-4-->
+    
+        <div class="col-sm-4">
+            
+            <a href="#"><img id="tbd" src="http://www.zootemplate.com/wp-content/uploads/2014/04/bootstrap-html5-css3.png" alt="Undetermined" class="img-responsive margin"></a>
+        <div class="middle">
+        <div class="text">Coming Soon</div><!--div text-->   
+        </div><!--div middle-->
+    </div><!--div col-sm-4-->
+        
+        <div class="col-sm-4">
+            
+            <a href="#"><img id="tbd" src="http://www.zootemplate.com/wp-content/uploads/2014/04/bootstrap-html5-css3.png" alt="Undetermined" class="img-responsive margin"></a>              
+        <div class="middle">
+        <div class="text">Coming Soon</div><!--div text-->               
+            </div><!--div middle-->            
+             </div><!--div col-sm-4-->
+        
+        
+     </div><!--div row-->   
+     
+
+</div><!--div container-fluid-->
+    
+    <!--End of WORKS-->
+    
+    <!--Beginning of CONTACT-->
+<div id="contact"
+     class="container-fluid">
+    <em><h4 class="section-subtitle">so now, let's connect and really have coffee</h4></em>
+  <h1>Contact</h1>
+    <i class="fa fa-address-card-o">
+    </i>
+    <hr>
+
+
+  <div class="center-block" style="width:60px"><!--EmailMe-->
+   
+       <a href="mailto:jen.sol1305@gmail.com" target="_blank">
+       <i class="fa fa-envelope" style="margin-bottom: 5px" title="JEN.SOL1305@GMAIL.COM">
+       </i></a>
+  </div> 
+    <p style="margin-top: 10px; margin-bottom: 70px;"><strong>Email</strong></p><!--EmailMe-->  
+    
+  <p style="margin-top: 80px; margin-bottom: 20px;"><strong>Catch Me Here As Well:</strong></p>
+    
+         <div class="center-block" style="width:60px"><!--Twitter-->
+            
+                 <a href="https://twitter.com/jensol13" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>
+        <!--LinkedIN-->
+   <a href="https://www.linkedin.com/in/jennifer-solis-jensol13/" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a>
+         <!--GitHub-->
+                 <a href="https://github.com/jensol13" target="_blank"><i class="fa fa-github" title="GitHub"></i></a>
+        <!--Facebook-->
+   <a href="https://www.facebook.com/jensol13" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a>
+     
+             </div><!--div contact-item-->
+    </div><!--div container-fluid-->
+    
+    <div class="container footer text-center">
+        <footer><em>thank you! this portfolio theme made by <a href="https://www.freecodecamp.com/jensol13" target="_blank" title="freeCodeCamp">jennifer solis</a></em></footer>                 
+    </div>         
+    
+    
+</body>
+
+</html>
+
+   
+            
+            
+        
+        
+        
+     
+        
+        
+        
+        
+       
+     
+     
+    
+    
+    
+   
+
+
+
+
+
